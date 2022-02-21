@@ -2,10 +2,10 @@
 
 **Server Start**
 
-npm run dev
+```npm run dev```
 
 **Client Start**
 
-npm run start
+```npm run start```
 
 
