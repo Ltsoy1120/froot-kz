@@ -1,0 +1,146 @@
+.Payments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.Payments__header {
+    border-bottom: 2px solid #e5e5ea;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.Payments__title {
+    color: #b1b0b0;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    margin: 0 auto;
+}
+.Payments__content, .Payments__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* filter */
+.Payments__filter-btn {
+    text-align: right;
+}
+.Modal__container form {
+    width: 95%;
+}
+.Payments__filter {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.Payments__filter-title {
+    margin: 5px;
+}
+.Payments__filter-item {
+    margin: 0 30px;
+    width: 100%;
+}
+.Payments__filter-date-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Payments__filter-date {
+    display: flex;
+    flex-direction: column;
+}
+.Payments__filter-date span {
+    display: block;
+    margin: 0 5px 5px 5px;
+}
+.Payments__filter-select, .Payments__filter-input {
+    height: 35px;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0 10px;
+    font-size: 14px;
+    border-radius: 0;
+    border: 1px solid gray;
+    background-color: white;
+    width: 170px;
+}
+.Payments__filter-date-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+/* filter by status */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+}
+.dropdown__title {
+    display: block;
+    padding: 8px 10px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.dropdown__content {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background: white;
+    width: 170px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    z-index: 1;
+}
+.dropdown:hover .dropdown__content {
+    display: block;
+}
+.dropdown__content-item {
+    padding: 5px 10px;
+}
+.dropdown__content-item:hover {
+    background: #bbb9b9;
+}
+/* filter buttons */
+.Payments__filter-control {
+    margin: 20px 0 10px;
+}
+.button {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    background: lightgreen;
+    margin:2px 0 4px 0;
+    cursor: pointer;
+}
+
+@media screen and (min-width:600px) {
+    .Payments {
+        padding: 15px;
+    }
+    .Payments__header {
+        justify-content: space-between;
+    }
+    .Payments__title {
+        text-align: left;
+        margin: 0;
+    }
+    .Payments__filter-date-content {
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:1200px) {
+    .Payments__filter-date {
+        width: auto;
+    }
+    .Payments__filter-date-item {
+        flex-direction: row;
+    }
+    .Payments__filter-item {
+        margin: 0 5px;
+        width: auto;
+    }
+}

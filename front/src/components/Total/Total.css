@@ -1,0 +1,31 @@
+.Total {
+    text-align: center;
+    margin: 10px auto;
+    color: #363636;
+    display: flex;
+    flex-direction: column;
+}
+.Total__title {
+    margin: 10px;
+}
+.Total__company {
+    color: #363636;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #f52284;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    width: 95%;
+}
+@media screen and (min-width:600px) {
+    .Total__company {
+        font-size: 20px;
+        width: 320px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .Total {
+        flex-direction: row;
+    }
+}

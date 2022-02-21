@@ -1,0 +1,82 @@
+h4 {
+  margin: 2rem 0rem 1rem;
+}
+.table-wrap {
+  overflow: auto;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  max-width: 100%;
+  overflow-y: auto; 
+  height: 60vh;
+}
+.table-image > td,th {
+  vertical-align: middle;
+  text-align: center;
+}
+.table{
+  height: 100%;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse; 
+}
+/* .table>thead{
+    background-color: #009879;
+    text-align: left;
+
+} */
+.table tr {
+  max-width: 100%;
+}
+.table th {
+  position: sticky; 
+  top: 0;
+  color: #ffffff;
+  background:#424141;
+}
+.table td, th {
+  padding: 0 5px;
+  box-sizing: border-box;
+  height: 40px;
+}
+.table,td,th {
+  border: 1px solid black;
+  text-align: center;
+}
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Account__btn {
+  background-color: #e3e6e6;
+  color: #5e5d5d;
+  border-radius: 3px;
+  border: 1px solid rgb(133, 131, 131);
+  padding: 3px;
+  margin: 5px;
+  font-size: 14px;
+  width: 100px;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.Account__btn:hover, .Account__btn:focus {
+  background-color: #c4c7c7;
+}
+.Account__btn_img {
+  cursor: pointer;
+  color: #ff067c;
+  text-decoration: underline;
+}
+.Account__btn_img:hover {
+  background-color: #ff067c;
+  color: white;
+}
+
+.show {display: block;}
+

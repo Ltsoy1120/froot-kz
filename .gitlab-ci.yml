@@ -1,0 +1,53 @@
+stages:
+    # - build
+    - test
+    - deploy
+
+# Docker build:
+#     stage: build
+#     script:
+        # - echo 'docker build is successful'
+
+Unit test:
+    stage: test
+#    before_script:
+#        - cd ./api
+    script:
+#        - npm run test
+        - cd ./api && npm install
+        - npm run test:jest
+        - echo 'this is unit test!'
+#    tags:
+#        - server
+
+Linter test:
+    stage: test
+    # before_script:
+    #     - echo 'before test 2'
+    script:
+        - echo 'this is linter test!'
+#    tags:
+#        - server
+
+Deploy to dev:
+    stage: deploy
+    script:
+        # - docker stop docker_frontend_1 docker_bot_1 docker_backend_1 docker_mongo_1
+        # - docker rm docker_frontend_1 docker_bot_1 docker_backend_1 docker_mongo_1
+        # - docker rmi esdp-telegram-1 esdp-frontend-1 esdp-backend-1
+        # - cd ./docker
+        # - docker-compose up --build -d
+        - pm2 stop api && pm2 delete api
+        - pm2 stop front && pm2 delete front
+        - pm2 stop bot && pm2 delete bot
+        - cd ./api && npm install 
+        - pm2 start --name api npm -- start
+        - cd ../front && npm install
+        - pm2 start --name front npm -- start
+        - cd ../telegram && npm install
+        - pm2 start --name bot npm -- start
+        - echo 'deploy success'
+    only:
+        - test-deploy
+#    tags:
+#        - server
