@@ -1,10 +1,14 @@
 # ESDP_froot.kz
 
-**Server Start**
+**Step 1 - Adding fixtures**
+
+```npm run seed```
+
+**Step 2 - Server Start**
 
 ```npm run dev```
 
-**Client Start**
+**Step 3 - Client Start**
 
 ```npm run start```
 
