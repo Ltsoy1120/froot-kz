@@ -1,25 +1,24 @@
 .ButtonPink {
-    width: 100%;
-    height: 35px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #ff067c;
-    border: none;
-    margin: 10px 0;
-    box-sizing: border-box;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 3px 2px;
-    outline: none;
-    cursor: pointer;
+  /* width: 100%; */
+  height: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff067c;
+  border: none;
+  margin: 10px 0;
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 2px;
+  outline: none;
+  cursor: pointer;
 }
 .ButtonPink:hover {
-    box-shadow: 0 0 10px 1px #9d9ea0;
+  box-shadow: 0 0 5px 1px #272727;
 }
-@media screen and (min-width:600px) {
-    .ButtonPink {
-        min-width: 150px;
-        max-width: 250px;
-        margin: 10px;
-    }
+@media screen and (min-width: 600px) {
+  .ButtonPink {
+    min-width: 150px;
+    max-width: 250px;
+  }
 }

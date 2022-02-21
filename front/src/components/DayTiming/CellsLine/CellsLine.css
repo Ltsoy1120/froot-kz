@@ -1,161 +1,148 @@
 .DayTiming__headCell--cellsLine {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 
 .DayTiming__headCell {
-    width: 50px;
-    padding: 5px;
-    height: 25px;
-    font-weight: bold;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    border-radius: 3px;
+  width: 50px;
+  padding: 5px;
+  height: 25px;
+  font-weight: bold;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 3px;
 }
 .DayTiming__hiddenText {
-    display: none;
+  display: none;
 }
 .DayTiming__modalInfo {
-    /*min-width: 200px;*/
-    /*max-width: 320px;*/
-    width: 400px;
-    min-height: 100px;
-    background: white;
-    border-radius: 10px;
-    border: 1px solid #4e4e4e;
-    box-shadow: 0 0 4px 2px black;
-    z-index: 7;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    box-sizing: border-box;
-    padding: 5px;
+  /*min-width: 200px;*/
+  /*max-width: 320px;*/
+  width: 400px;
+  min-height: 100px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #4e4e4e;
+  box-shadow: 0 0 4px 2px black;
+  z-index: 7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  box-sizing: border-box;
+  padding: 5px;
 }
 
 .DayTiming__cellBlock {
-    position: relative;
+  position: relative;
 }
 .DayTiming__cell {
-    background: none;
-    width: 80px;
-    padding: 5px;
-    border: 1px solid #4e4e4e;
-    user-select: none;
-    cursor: pointer;
-    border-radius: 3px;
-    height: 25px;
-    position: relative;
+  background: none;
+  width: 80px;
+  padding: 5px;
+  border: 1px solid #4e4e4e;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 3px;
+  height: 25px;
+  position: relative;
 }
 .DayTiming__cell--title {
-    padding: 5px;
-    height: 27px;
-    color: #4e4e4e;
-    font-weight: bold;
+  padding: 5px;
+  height: 27px;
+  color: #4e4e4e;
+  font-weight: bold;
 }
 
 /*MODAL*/
 
 .DayTiming__modalInfo--participants {
-    color: #4e4e4e;
-    font-size: 12px;
+  color: #4e4e4e;
+  font-size: 12px;
 }
 .DayTiming__modalInfo-bottom {
-    /*min-width: 200px;*/
-    /*max-width: 320px;*/
-    width: 400px;
-    min-height: 100px;
-    background: white;
-    border-radius: 10px;
-    border: 1px solid #4e4e4e;
-    box-shadow: 0 0 4px 2px black;
-    z-index: 7;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: none;
-    box-sizing: border-box;
-    padding: 5px;
+  /*min-width: 200px;*/
+  /*max-width: 320px;*/
+  width: 400px;
+  min-height: 100px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #4e4e4e;
+  box-shadow: 0 0 4px 2px black;
+  z-index: 7;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+  box-sizing: border-box;
+  padding: 5px;
 }
-.DayTiming__modalInfo,.DayTiming__modalInfo-bottom {
-    display: none;
+.DayTiming__modalInfo,
+.DayTiming__modalInfo-bottom {
+  display: none;
 }
 .DayTiming__cellBlock:hover ~ .DayTiming__modalInfo,
-.DayTiming__cellBlock:hover ~ .DayTiming__modalInfo-bottom{
-    display: block;
+.DayTiming__cellBlock:hover ~ .DayTiming__modalInfo-bottom {
+  display: block;
 }
-.DayTiming__modalInfo:hover{
-    display: block;
+.DayTiming__modalInfo:hover {
+  display: block;
 }
-.DayTiming__modalInfo-bottom:hover{
-    display: block;
+.DayTiming__modalInfo-bottom:hover {
+  display: block;
 }
 
 .DayTiming__modalInfo__author {
-    color: deeppink;
-
+  color: deeppink;
 }
 .DayTiming__modalInfo__subject {
-    font-size: 18px;
+  font-size: 18px;
 }
 .DayTiming__modalInfo__btnBlock {
-    display: flex;
-    margin: 30px 0;
+  display: flex;
+  margin: 30px 0;
+  flex-wrap: wrap;
 }
-.DayTiming__modalInfo__btn {
-    background: deeppink;
-    border: none;
-    border-radius: 20px;
-    margin-right: 10px;
-    padding: 5px;
-    cursor: pointer;
-    color: white;
-}
-.DayTiming__modalInfo__btn:hover {
-    background: #a00d5e;
-}
-.DayTiming__modalInfo__btn:active {
-    transform: scale(0.99);
-}
+
 .DayTiming__modalInfo__details {
-    font-size: 14px;
-    margin-bottom: 30px;
-    display: block;
-    padding-bottom: 5px;
-    border-bottom: 1px solid deeppink;
+  font-size: 14px;
+  margin-bottom: 30px;
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid deeppink;
 }
 .DayTiming__modalInfo__participantsTitle {
-    color: deeppink;
-    font-weight: bold;
+  color: deeppink;
+  font-weight: bold;
 }
 .DayTiming__modalInfo__participantsBlock {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .DayTiming__modalInfo__participantsName {
-    font-weight: bold;
-    margin-right: 10px;
+  font-weight: bold;
+  margin-right: 10px;
 }
 .DayTiming__modalInfo__participantsStatus {
-    font-style: italic;
-    font-size: 12px;
+  font-style: italic;
+  font-size: 12px;
 }
 
 @media (max-width: 700px) {
-    .DayTiming__modalInfo-bottom {
-        width: 200px;
-    }
-    .DayTiming__modalInfo {
-        width: 200px;
-    }
+  .DayTiming__modalInfo-bottom {
+    width: 200px;
+  }
+  .DayTiming__modalInfo {
+    width: 200px;
+  }
 }
 
 @media (max-width: 800px) {
-    .DayTiming{
-        max-width: 520px;
-        flex-direction: column;
-    }
+  .DayTiming {
+    max-width: 520px;
+    flex-direction: column;
+  }
 }

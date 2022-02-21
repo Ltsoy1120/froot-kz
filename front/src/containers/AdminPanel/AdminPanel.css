@@ -1,29 +1,30 @@
 .AdminPanel__navlink {
-    display: inline-block;
-    cursor: pointer;
-    border: none;
-    text-decoration: none;
-    margin: 10px;
-    padding: 10px;
-    background: linear-gradient(64.35deg,#ff7488 9.2%,#ff077d 89.76%);
-    color: white;
-    border-radius: 10px;
-    outline: none;
-    font-size: 14px;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 10px;
+  background: #fd3194;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
 }
 .flexs {
-    display: flex;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .tac {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 .border {
-    border: 1px solid #ff077d;
-    border-radius: 10%;
-    padding: 5px;
-    margin: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
 }
